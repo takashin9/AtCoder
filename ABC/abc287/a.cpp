@@ -9,16 +9,17 @@ using ll = long long;
 
 
 int main() {
-    
-    string n;
+    ll n;
     cin >> n;
-
-    for(int i = 0; i < n.size(); i++){
-        if(n[i] >= 'A' and n[i] <= 'Z'){
-            cout << i+1 << endl;
-            return 0;
-        }
+    ll cnt = 0;
+    for(int i = 0; i < n; i++){
+        string s;
+        cin >> s;
+        if(s == "For") cnt++;
     }
+    cout << ((cnt*2 > n) ? "Yes" : "No") << endl;
+
+    
     
     return 0;
 }
