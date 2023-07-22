@@ -17,13 +17,13 @@ fi
 
 mkdir -p ARC/$1
 
-cp -n template.cpp ARC/$1/a.cpp
-cp -n template.cpp ARC/$1/b.cpp
-cp -n template.cpp ARC/$1/c.cpp
-cp -n template.cpp ARC/$1/d.cpp
-cp -n template.cpp ARC/$1/e.cpp
-cp -n template.cpp ARC/$1/f.cpp
-cp -n template.cpp ARC/$1/g.cpp
-cp -n template.cpp ARC/$1/h.cpp
+cp -n template.cpp ARC/$1/${1}_a.cpp
+cp -n template.cpp ARC/$1/${1}_b.cpp
+cp -n template.cpp ARC/$1/${1}_c.cpp
+cp -n template.cpp ARC/$1/${1}_d.cpp
+cp -n template.cpp ARC/$1/${1}_e.cpp
+cp -n template.cpp ARC/$1/${1}_f.cpp
+cp -n template.cpp ARC/$1/${1}_g.cpp
+cp -n template.cpp ARC/$1/${1}_h.cpp
 
 exit 0

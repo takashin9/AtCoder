@@ -10,20 +10,20 @@ using ll = long long;
 
 int main() {
     
-    ll n;
+    int n;
     string s;
     cin >> n >> s;
 
-    for(int i = 1; i < n; i++){
-        bool flag = false;
-        for(int l = 0; l < n-i; l++){
-            if(s[l] == s[l+i]){
-                flag = true;
+    for (int i = 1; i <= n; i++) {
+        bool m = false;
+        for (int l = 0; l < n - i; l++) {
+            if (s[l] == s[l + i]) {
+                m = true;
                 cout << l << endl;
                 break;
             }
         }
-        if(!flag) cout << n-i << endl;
+        if (m) cout << n - i << endl;
     }
     
     return 0;
