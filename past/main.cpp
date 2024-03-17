@@ -6,7 +6,7 @@ int main(){
     int h, w; cin >> h >> w;
     vector<string> s(h);
     for (int i = 0; i < h; i++) cin >> s[i];
-    int dx[8] = {1, 1, 0, -1, -1, -1, 0, 1};w
+    int dx[8] = {1, 1, 0, -1, -1, -1, 0, 1};
     int dy[8] = {0, 1, 1, 1, 0, -1, -1, -1};
     int ans = 0;
     vector<vector<int>> vis(h, vector<int>(w, -1));
