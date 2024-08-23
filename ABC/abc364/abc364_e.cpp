@@ -11,8 +11,7 @@ using ll = long long;
 int main() {
     int n, x, y; cin >> n >> x >> y;
     vector<int> a(n), b(n);
-    for (int i = 0; i < n; i++) cin >> a[i];
-    for (int i = 0; i < n; i++) cin >> b[i];
+    for (int i = 0; i < n; i++) cin >> a[i] >> b[i];
     
     vector dp(n + 1, vector(x + 1, vector<int>(n + 1, 1e9))); // dp[i][j][k]: i個目まで見て、甘さj、食べた料理の個数kのときのしょっぱさの最小値
     dp[0][0][0] = 0;
